@@ -1,10 +1,12 @@
 # Import necessary libraries
+import sklearn
 import streamlit as st
 import pickle
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
+
 
 # Load the trained model and CountVectorizer
 model = pickle.load(open('nlp_model.pkl', 'rb'))
