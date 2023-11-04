@@ -1,6 +1,7 @@
 # Import necessary libraries
 import sklearn
 import streamlit as st
+import joblib 
 import pickle
 import pandas as pd
 import seaborn as sns
@@ -9,7 +10,7 @@ import os
 
 
 # Load the trained model and CountVectorizer
-model = pickle.load(open('nlp_model.pkl', 'rb'))
+model = joblib.load('nlp_model.joblib')
 vectorizer = pickle.load(open('transform.pkl', 'rb'))
 
 
